@@ -7,7 +7,8 @@
     <script type="text/Javascript">
 	
 	var C_degree;
-	C_degree=window.prompt("Input Celsius:");
+	C_degree=window.prompt("Input Celsius:")
+	document.writeln("<h1>Celsius:"+C_degree+"</h1>");
 	document.writeln("<h1>Fahrenheit:"+ degree(C_degree).toFixed(2)+"</h1>");
 
 	function degree(C_degree)
