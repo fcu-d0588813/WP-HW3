@@ -6,10 +6,14 @@
     <title>Box</title>
     <script type="text/Javascript">
 	
-	var C_degree,F_degree;
+	var C_degree;
 	C_degree=window.prompt("Input Celsius:");
-	F_degree=(9/5*C_degree)+32;
-	document.writeln("<h1>Fahrenheit: "+ F_degree+"</h1>");
+	document.writeln("<h1>Fahrenheit:"+ degree(C_degree).toFixed(2)+"</h1>");
+
+	function degree(C_degree)
+	{
+	   return (9/5*C_degree)+32;
+	}
 
     </script>
     </head>
